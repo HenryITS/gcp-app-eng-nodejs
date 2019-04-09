@@ -1,0 +1,21 @@
+{
+  "name": "gcp-app-eng-nodejs",
+  "version": "1.0.0",
+  "description": "A nodejs app for GCP",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gcloud app deploy",
+    "start": "node app.js",
+    "system-test": "repo-tools test app",
+    "test": "npm run system-test",
+    "e2e-test": "repo-tools test deploy"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "author": "Henry",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
